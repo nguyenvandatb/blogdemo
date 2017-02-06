@@ -1,0 +1,6 @@
+en:
+  shared:
+    micropost_form:
+      micropost_placeholder: "Compose new micropost..."
+      micropost_button: "Submit"
+
