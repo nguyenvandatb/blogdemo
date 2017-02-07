@@ -3,12 +3,14 @@ class CommentsController < ApplicationController
   before_action :correct_user,   only: :destroy
 
   def create
-    micropost = Micropost.find_by id: params[:id]
-    @comment = micropost.comments.build(comment_params)
+    @micropost = Micropost.find_by id: params[:id]
+    @comment = @micropost.comments.build comment_params
     @comment.user_id = params[:user_id]
     if @comment.save
-      flash[:success] = "Comment created!"
-      redirect_to root_url
+      respond_to do |format|
+        format.html {redirect_to root_url}
+        format.js
+      end
     else
       @feed_items = []
       render "static_pages/home"

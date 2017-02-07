@@ -1,11 +1,77 @@
 en:
+  layout:
+    footer:
+      blog_demo: "Blog Demo"
+      about: "About"
+      contact: "Contact"
+    header:
+      blog_demo: "Blog demo"
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      posts: "Posts"
+      log_in: "Log in"
   shared:
     micropost_form:
       micropost_content_placeholder: "Compose new micropost..."
       micropost_title_placeholder: "Title"
       micropost_button: "Submit"
+    error_messages:
+      form_error_contain: "The form contains"
+      form_error: "error"
+    stats:
+      following: "following"
+      follower: "followers"
+    user_info:
+      view_my_profile: "view my profile"
+  comments:
+    comment:
+      comment_post_verb: "Posted"
+      comment_post_ago:  "ago"
+    comment_guest:
+      comment_post_verb: "Posted"
+      comment_post_ago:  "ago"
   microposts:
     micropost:
+      comment_post_verb: "Posted"
+      comment_post_ago:  "ago"
+      delete_question: "You sure?"
       micropost_comment_placeholder: "Comment"
       micropost_comment_button: "Send"
-
+    micropost_guest:
+      comment_post_verb: "Posted"
+      comment_post_ago:  "ago"
+  static_pages:
+    about:
+      about: "About"
+    home:
+      micropost_feeds: "Micropost feeds"
+      welcome: "Welcome to blog demo"
+      welcome_detail: "This is the home page for the blog demo"
+      sign_up_now: "Sign up now!"
+    help:
+      help: "Help"
+      help_message: "Please contact developer for help"
+    post:
+      all_posts: "All Posts"
+    contact:
+      contact: "Contact"
+      contact_message: "Please contact developer"
+  users:
+    follow:
+      follow: "Follow"
+    user:
+      delete_user_question: "You sure?"
+    edit:
+      edit_title: "Update your profile"
+      change_link: "Change"
+    index:
+      all_users: "All Users"
+    new:
+      sign_up: "Sign Up"
+      sign_up_button: "Create my account"
+    show_follow:
+      view_profile: "View my profile"
