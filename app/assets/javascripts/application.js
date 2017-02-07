@@ -15,3 +15,16 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function(){
+ $('.comment_link').click(function(e){
+  e.preventDefault();
+  if ($(this).text() == 'comment') {
+    $(this).text('uncomment');
+  } else {
+    $(this).text('comment');
+  }
+  $(this).parent().nextAll('.comment_form').first().toggle();
+});
+
+})

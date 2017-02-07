@@ -14,4 +14,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def post
+    @microposts = Micropost.all.paginate(page: params[:page])
+  end
 end

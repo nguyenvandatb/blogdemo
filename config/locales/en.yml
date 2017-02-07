@@ -1,6 +1,11 @@
 en:
   shared:
     micropost_form:
-      micropost_placeholder: "Compose new micropost..."
+      micropost_content_placeholder: "Compose new micropost..."
+      micropost_title_placeholder: "Title"
       micropost_button: "Submit"
+  microposts:
+    micropost:
+      micropost_comment_placeholder: "Comment"
+      micropost_comment_button: "Send"
 
